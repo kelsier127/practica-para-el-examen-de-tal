@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #5a5a5a;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    height: 120px;
+    margin: 30px;
+    margin-top:15px;
+}
+nav a{
+    all:unset;
+    background-color: #42c1c2;
+    color: white;
+    padding: 8px 10px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.75s;
+}
+a:hover{
+    
+    background-color: #CE8985;
+}
+a:active{
+    background-color: #BB8FCE;
+}
+nav section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.eslogan{
+    margin: 20px;
+    text-align: center;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 150px;
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    @media screen and (max-width: 576px){
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    grid-row-gap: 0px;
+}
+.productos{
+    width: 100%;
+    border-radius: 15px;
+}
+
+h4{
+    margin: 15px 0;
+}
+
+.section { 
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    transition: 1s;
+    border-radius: 20px;
+}
+.section:hover {
+    transform: scale(1.1);
+    background-color: #e1ffff;
+}
+.section5{ 
+    padding: 25px;
+    grid-area: 5 / 2 / 6 / 6;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:75px;
+    margin: 0 150px;
+
+    @media screen and (max-width: 576px){
+        flex-direction: column;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 768px){
+        margin: 0;
+        justify-content: center;
+    }
+}
+
+span{
+    font-weight: bold;
+}
+.miniLogo{
+    width: 32px;
+    height: 32px;
+}
+.articuloInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.iconoTitulo{
+    display: flex;
+    margin: 4px 10px;
+    flex-direction: column;
+}
+footer{
+    padding: 30px 0 50px 0 ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:15px 0;
+}
+
+.logoMail{
+    width: 32px;
+}
+.telefono{
+    font-size:  30px;
+}
